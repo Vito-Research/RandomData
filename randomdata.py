@@ -37,19 +37,19 @@ for i in range(rows):
         if i==0:
           #df=pd.DataFrame([[1, 2]],columns=list('DB'),index=['x'])
           
-           df=pd.DataFrame([[date_strf,randint(60,61)]],columns=list('DB'),index=['x'])
+           df=pd.DataFrame([[date_strf,randint(59,64)]],columns=list('DB'),index=['x'])
 
            continue
         #    
         if  i<=days_betweenstarttolast.days and i>=days_betweenstarttofirst.days:
-         df2= pd.DataFrame([[date_strf,randint(65,66)]],columns=list('DB'),index=['x']) 
+         df2= pd.DataFrame([[date_strf,randint(65,70)]],columns=list('DB'),index=['x']) 
          df=df.append(df2)
           
         # col.append(randint(65,66))
         # Date.append(col) 
          continue
         if i<=days_betweenstarttofirst.days or i>=days_betweenstarttolast.days: 
-         df3= pd.DataFrame([[date_strf,randint(60,61)]],columns=list('DB'),index=['x']) 
+         df3= pd.DataFrame([[date_strf,randint(59,64)]],columns=list('DB'),index=['x']) 
         # df=df.append(df3)
          df= df.append(df3)
          # st.write(df)
